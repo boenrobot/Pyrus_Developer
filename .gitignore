@@ -1,3 +1,4 @@
+/vendor/
 /run-tests.log
 .DS_Store
 /.settings/

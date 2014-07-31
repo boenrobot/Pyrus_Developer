@@ -48,7 +48,7 @@ For more information, read the [documentation][5].
   <active>yes</active>
  </lead>
  <date>2014-07-31</date>
- <time>14:21:10</time>
+ <time>23:13:53</time>
  <version>
   <release>0.6.0</release>
   <api>0.1.0</api>
@@ -67,7 +67,8 @@ Bug Fixes/Refactoring:
 
  - Fix filename for packages with a dot in their name, #17 [fpoirotte]
  - Fix package creation, #18 [boenrobot]
- - Massive CS fixes, #23 [boenrobot]</notes>
+ - Massive CS fixes, #23 [boenrobot]
+ - Rewrote generate-pear2 and &quot;make&quot; with non-existent package.xml files, #27 [boenrobot]</notes>
  <contents>
   <dir name="/">
    <dir name="customcommand" baseinstalldir="/">
@@ -149,20 +150,17 @@ Bug Fixes/Refactoring:
       </dir>
       <dir name="PackageFile">
        <dir name="Commands">
-        <dir name="templates">
-         <file role="php" name="packagexmlsetup.php.tpl"/>
+        <dir name="MakePEAR2">
+         <file role="php" name="Filter.php"/>
         </dir>
-        <file role="php" name="PEAR2Skeleton.php"/>
-       </dir>
-       <dir name="PEAR2SVN">
-        <file role="php" name="Filter.php"/>
-       </dir>
-       <dir name="PECL">
-        <file role="php" name="Filter.php"/>
+        <dir name="MakePECL">
+         <file role="php" name="Filter.php"/>
+        </dir>
+        <file role="php" name="GeneratePEAR2.php"/>
+        <file role="php" name="MakePEAR2.php"/>
+        <file role="php" name="MakePECL.php"/>
        </dir>
        <file role="php" name="Commands.php"/>
-       <file role="php" name="PEAR2SVN.php"/>
-       <file role="php" name="PECL.php"/>
        <file role="php" name="v2.php"/>
       </dir>
       <dir name="Runphpt">
@@ -215,6 +213,12 @@ Bug Fixes/Refactoring:
     <min>2.0.0a1</min>
    </pearinstaller>
   </required>
+  <optional>
+   <package>
+    <name>PEAR2_Templates_Savant</name>
+    <channel>pear2.php.net</channel>
+   </package>
+  </optional>
  </dependencies>
  <phprelease/>
 </package>

@@ -48,7 +48,7 @@ For more information, read the [documentation][5].
   <active>yes</active>
  </lead>
  <date>2014-07-31</date>
- <time>14:21:10</time>
+ <time>23:13:53</time>
  <version>
   <release>0.6.0</release>
   <api>0.1.0</api>
@@ -77,12 +77,11 @@ For more information, read the [documentation][5].
    <file role="php" name="php/Pyrus/Developer/Runphpt/Runner.php"/>
    <file role="php" name="php/Pyrus/Developer/Runphpt/Exception.php"/>
    <file role="php" name="php/Pyrus/Developer/PackageFile/v2.php"/>
-   <file role="php" name="php/Pyrus/Developer/PackageFile/PECL/Filter.php"/>
-   <file role="php" name="php/Pyrus/Developer/PackageFile/PECL.php"/>
-   <file role="php" name="php/Pyrus/Developer/PackageFile/PEAR2SVN/Filter.php"/>
-   <file role="php" name="php/Pyrus/Developer/PackageFile/PEAR2SVN.php"/>
-   <file role="php" name="php/Pyrus/Developer/PackageFile/Commands/templates/packagexmlsetup.php.tpl"/>
-   <file role="php" name="php/Pyrus/Developer/PackageFile/Commands/PEAR2Skeleton.php"/>
+   <file role="php" name="php/Pyrus/Developer/PackageFile/Commands/MakePECL/Filter.php"/>
+   <file role="php" name="php/Pyrus/Developer/PackageFile/Commands/MakePECL.php"/>
+   <file role="php" name="php/Pyrus/Developer/PackageFile/Commands/MakePEAR2/Filter.php"/>
+   <file role="php" name="php/Pyrus/Developer/PackageFile/Commands/MakePEAR2.php"/>
+   <file role="php" name="php/Pyrus/Developer/PackageFile/Commands/GeneratePEAR2.php"/>
    <file role="php" name="php/Pyrus/Developer/PackageFile/Commands.php"/>
    <file role="php" name="php/Pyrus/Developer/Creator/Zip.php"/>
    <file role="php" name="php/Pyrus/Developer/Creator/Xml.php"/>
@@ -187,12 +186,11 @@ For more information, read the [documentation][5].
    <install name="php/Pyrus/Developer/Creator/Xml.php" as="Pyrus/Developer/Creator/Xml.php"/>
    <install name="php/Pyrus/Developer/Creator/Zip.php" as="Pyrus/Developer/Creator/Zip.php"/>
    <install name="php/Pyrus/Developer/PackageFile/Commands.php" as="Pyrus/Developer/PackageFile/Commands.php"/>
-   <install name="php/Pyrus/Developer/PackageFile/Commands/PEAR2Skeleton.php" as="Pyrus/Developer/PackageFile/Commands/PEAR2Skeleton.php"/>
-   <install name="php/Pyrus/Developer/PackageFile/Commands/templates/packagexmlsetup.php.tpl" as="Pyrus/Developer/PackageFile/Commands/templates/packagexmlsetup.php.tpl"/>
-   <install name="php/Pyrus/Developer/PackageFile/PEAR2SVN.php" as="Pyrus/Developer/PackageFile/PEAR2SVN.php"/>
-   <install name="php/Pyrus/Developer/PackageFile/PEAR2SVN/Filter.php" as="Pyrus/Developer/PackageFile/PEAR2SVN/Filter.php"/>
-   <install name="php/Pyrus/Developer/PackageFile/PECL.php" as="Pyrus/Developer/PackageFile/PECL.php"/>
-   <install name="php/Pyrus/Developer/PackageFile/PECL/Filter.php" as="Pyrus/Developer/PackageFile/PECL/Filter.php"/>
+   <install name="php/Pyrus/Developer/PackageFile/Commands/GeneratePEAR2.php" as="Pyrus/Developer/PackageFile/Commands/GeneratePEAR2.php"/>
+   <install name="php/Pyrus/Developer/PackageFile/Commands/MakePEAR2.php" as="Pyrus/Developer/PackageFile/Commands/MakePEAR2.php"/>
+   <install name="php/Pyrus/Developer/PackageFile/Commands/MakePEAR2/Filter.php" as="Pyrus/Developer/PackageFile/Commands/MakePEAR2/Filter.php"/>
+   <install name="php/Pyrus/Developer/PackageFile/Commands/MakePECL.php" as="Pyrus/Developer/PackageFile/Commands/MakePECL.php"/>
+   <install name="php/Pyrus/Developer/PackageFile/Commands/MakePECL/Filter.php" as="Pyrus/Developer/PackageFile/Commands/MakePECL/Filter.php"/>
    <install name="php/Pyrus/Developer/PackageFile/v2.php" as="Pyrus/Developer/PackageFile/v2.php"/>
    <install name="php/Pyrus/Developer/Runphpt/Exception.php" as="Pyrus/Developer/Runphpt/Exception.php"/>
    <install name="php/Pyrus/Developer/Runphpt/Runner.php" as="Pyrus/Developer/Runphpt/Runner.php"/>
